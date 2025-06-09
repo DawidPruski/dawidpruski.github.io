@@ -21,7 +21,7 @@ body {
   font-weight: bold;
 }
 
-a {
+.side-nav a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
@@ -38,11 +38,11 @@ a {
   text-shadow: 0px 0px 10px white;
 }
 
-img {
+/* img {
   border-radius: 50%;
   max-width: 200px;
   max-height: 200px;
-}
+} */
 
 .main-page {
   top: 0px;
@@ -58,12 +58,32 @@ img {
   align-items: center;
 }
 
+.about-me img {
+  border-radius: 50%;
+  max-width: 200px;
+  max-height: 200px;
+}
+
 .item-1 {
   justify-self: center;
   align-self: start;
 }
 
-.item-2 {
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+  gap: 50px;
+  justify-items: center;
+  align-items: center;
+}
+
+.contact-links img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.contact-links a {
+  grid-row: 1;
 }
 
 @media (max-width: 1300px) {
@@ -75,5 +95,11 @@ img {
   }
   .item-2 {
     grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-links a {
+    grid-row: auto;
   }
 }
