@@ -1,7 +1,7 @@
 /* Fixed side-nav, full height */
 body {
-  background-color: #1f2937;
-  color: #e5e7eb;
+  background-color: #815854;
+  color: #f9ebde;
 }
 
 .side-nav {
@@ -11,7 +11,7 @@ body {
   position: fixed;
   font-family: Inconsolata, monospace;
   font-size: 2ex;
-  border-right: 1px solid #414b5f;
+  border-right: 1px solid #f9ebde;
 }
 .text-side-nav {
   display: block;
@@ -25,7 +25,7 @@ body {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 20px;
-  color: #e5e7eb;
+  color: #f9ebde;
   display: block;
   border: none;
   background: none;
@@ -72,6 +72,7 @@ body {
 .contact-links {
   display: grid;
   grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+  margin-top: 20px;
   gap: 50px;
   justify-items: center;
   align-items: center;
