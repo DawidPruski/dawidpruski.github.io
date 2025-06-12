@@ -4,6 +4,11 @@ body {
   color: #f9ebde;
 }
 
+h1 {
+  font-size: 24px;
+  margin: 10px;
+}
+
 .side-nav {
   width: 300px;
   height: 100%;
@@ -67,6 +72,11 @@ body {
 .item-1 {
   justify-self: center;
   align-self: start;
+}
+
+.date-place {
+  display: flex;
+  justify-content: space-between;
 }
 
 .contact-links {
