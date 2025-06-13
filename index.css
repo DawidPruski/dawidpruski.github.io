@@ -16,7 +16,7 @@ h1 {
   position: fixed;
   font-family: Inconsolata, monospace;
   font-size: 2ex;
-  border-right: 1px solid #f9ebde;
+  border-right: 1px solid #f9ebde3a;
 }
 .text-side-nav {
   display: block;
@@ -49,52 +49,89 @@ h1 {
   max-height: 200px;
 } */
 
+.separator {
+  border-bottom: 1px dotted #f9ebde;
+}
+
 .main-page {
   top: 0px;
   font-family: Inconsolata, monospace;
   margin-left: 350px;
   margin-right: 300px;
-}
 
-.about-me {
-  display: grid;
-  grid-template-columns: 200px repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  align-items: center;
-}
+  h1 {
+    margin: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-bottom: 1px solid #f9ebde;
+  }
 
-.about-me img {
-  border-radius: 50%;
-  max-width: 200px;
-  max-height: 200px;
-}
+  .about-me {
+    display: grid;
+    grid-template-columns: 200px repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: center;
+  }
 
-.item-1 {
-  justify-self: center;
-  align-self: start;
-}
+  .about-me img {
+    border-radius: 50%;
+    max-width: 200px;
+    max-height: 200px;
+  }
 
-.date-place {
-  display: flex;
-  justify-content: space-between;
-}
+  .item-1 {
+    justify-self: center;
+    align-self: start;
+  }
+  .experience {
+    article {
+      margin-left: 5px;
+    }
+    .date-place {
+      display: flex;
+      justify-content: space-between;
+      img {
+        width: 16px;
+      }
+      img[alt="calendar"] {
+        padding-right: 5px;
+      }
+      img[alt="place"] {
+        padding-left: 5px;
+      }
+    }
+  }
 
-.contact-links {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
-  margin-top: 20px;
-  gap: 50px;
-  justify-items: center;
-  align-items: center;
-}
+  .education {
+    article {
+      margin-left: 5px;
+    }
+    .date {
+      display: flex;
+      img {
+        width: 16px;
+        padding-right: 5px;
+      }
+    }
+  }
 
-.contact-links img {
-  max-width: 50px;
-  max-height: 50px;
-}
+  .contact-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto-fit, 1fr));
+    margin-top: 20px;
+    gap: 50px;
+    justify-items: center;
+    align-items: center;
 
-.contact-links a {
-  grid-row: 1;
+    img {
+      max-width: 50px;
+      max-height: 50px;
+    }
+
+    a {
+      grid-row: 1;
+    }
+  }
 }
 
 @media (max-width: 1300px) {
