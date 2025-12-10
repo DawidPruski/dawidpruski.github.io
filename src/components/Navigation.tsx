@@ -7,14 +7,14 @@ export default function Navigation() {
   };
   return (
     <>
-      <nav className="flex justify-center gap-14 ">
+      <nav className="flex flex-wrap justify-center gap-14 whitespace-nowrap font-semibold">
         <a
           href="#about"
           onClick={() => {
             scrollToId("about");
           }}
         >
-          {">"} About
+          {"> About"}
         </a>
         <a
           href="#experience"
@@ -22,7 +22,15 @@ export default function Navigation() {
             scrollToId("experience");
           }}
         >
-          {">"} Experience
+          {"> Experience"}
+        </a>
+        <a
+          href="#projects"
+          onClick={() => {
+            scrollToId("projects");
+          }}
+        >
+          {"> Projects"}
         </a>
         <a
           href="#education"
@@ -30,7 +38,7 @@ export default function Navigation() {
             scrollToId("education");
           }}
         >
-          {">"} Education
+          {"> Education"}
         </a>
         <a
           href="#contact"
@@ -38,7 +46,7 @@ export default function Navigation() {
             scrollToId("contact");
           }}
         >
-          {">"} Contact
+          {"> Contact"}
         </a>
       </nav>
     </>

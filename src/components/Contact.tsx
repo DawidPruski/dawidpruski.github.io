@@ -14,7 +14,7 @@ export default function Contact() {
         <a href="https://github.com/DawidPruski">
           <Image src={github} alt="github" width={50} height={50} />
         </a>
-        <a href="dpruski0@gmail.com">
+        <a href="mailto:dpruski0@gmail.com">
           <Image src={email} alt="email" width={50} height={50} />
         </a>
       </div>
